@@ -1,0 +1,24 @@
+@import '@/components/app/App.scss';
+
+.week {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - #{$navbar_height} - 50px);
+  padding-top: calc(#{$navbar_height} + 50px);
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .withSidebar {
+    width: calc(100% - 260px);
+  }
+
+  .withoutSidebar {
+    width: 100%;
+  }
+}

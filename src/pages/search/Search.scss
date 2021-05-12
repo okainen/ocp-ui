@@ -1,0 +1,35 @@
+@import '@/components/app/App.scss';
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - #{$navbar_height});
+  width: 100%;
+
+  .results {
+    width: 85%;
+
+    // @media (max-width: 1400px) {
+    //   width: 90%;
+    // }
+
+    // width: auto;
+
+    h1 {
+      text-align: center;
+    }
+
+    .items {
+      width: 100%;
+      // overflow: hidden;
+      flex-wrap: wrap;
+
+      display: flex;
+
+      // align-items: center;
+      justify-content: center;
+    }
+  }
+}

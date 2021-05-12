@@ -1,0 +1,65 @@
+.weekStepItem {
+  display: flex;
+  align-items: center;
+  padding: 5px 30px 5px 30px;
+  border-radius: 5px;
+  color: black;
+  font-size: 22px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .name {
+    display: inline;
+    padding: 10px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin: auto;
+  }
+
+  .effort {
+    display: inline;
+  }
+}
+
+.sidebarWeekStepItem {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-areas:
+    'icon name'
+    'icon effort';
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+  font-size: 16px;
+
+  .name {
+    display: block;
+    grid-area: name;
+    font-weight: 400;
+  }
+
+  .icon {
+    display: flex;
+    grid-area: icon;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 22px;
+    height: 22px;
+  }
+
+  .effort {
+    display: block;
+    grid-area: effort;
+    font-size: 12px;
+  }
+}

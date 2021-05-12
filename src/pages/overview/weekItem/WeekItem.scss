@@ -1,0 +1,26 @@
+.weekItem {
+  margin: 10px;
+  padding: 10px;
+  // border-style: solid;
+  // border-radius: 5px;
+  // border-width: 2px;
+  background-color: #f5f5f5;
+  // background-color: #fffbbb;
+  color: black;
+  text-decoration: none;
+  // border: 1px solid #c7c7c7;
+  // width: 80%;
+
+  .name {
+    padding: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 32px;
+  }
+
+  .step {
+    a {
+      text-decoration: none;
+    }
+  }
+}

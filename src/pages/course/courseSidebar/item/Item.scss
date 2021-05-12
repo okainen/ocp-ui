@@ -1,0 +1,50 @@
+@import '@/components/app/App.scss';
+
+.item {
+  box-sizing: border-box;
+  display: block;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+
+  a {
+    text-decoration: inherit;
+  }
+
+  .name {
+    display: block;
+    margin: 0.25em;
+    padding: 5px;
+    color: inherit;
+    text-decoration: inherit;
+
+    &:hover {
+      // background-color: rgba(0, 79, 99, 0.2);
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .active {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .menu {
+    padding-left: 10px;
+    color: inherit;
+    text-decoration: inherit;
+
+    .menuItem {
+      font-weight: 400;
+    }
+  }
+}

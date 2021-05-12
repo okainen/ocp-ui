@@ -1,0 +1,51 @@
+@import '@/components/app/App.scss';
+
+.courseItem {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 30% 1fr;
+  grid-template-areas:
+    'img name'
+    'img author';
+  width: 60%;
+  height: 200px;
+  margin: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1), -1px 1px 2px rgba(0, 0, 0, 0.1);
+
+  // padding: 5px;
+  // border: 1px solid rgba(0, 0, 0, 0.1);
+  // border-radius: 3px;
+
+  @media (max-width: 1200px) {
+    width: 80%;
+  }
+
+  .name {
+    display: flex;
+    grid-area: name;
+    // justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .author {
+    grid-area: author;
+    font-size: 16px;
+  }
+
+  .img {
+    grid-area: img;
+    width: 95%;
+    // height: auto;
+    height: 100%;
+    background-color: #91e9ff;
+  }
+
+  &:hover {
+    // box-shadow: none;
+    // border: 2px $secondary_color solid;
+
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2), -2px 2px 3px rgba(0, 0, 0, 0.2);
+  }
+}
